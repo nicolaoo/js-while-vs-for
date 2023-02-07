@@ -14,7 +14,24 @@ let resto = numeroUser % 2
 
 let numDispari = (resto = 1)
 
-
-for (let i = 0; i = 10; i++){
-
+while (numDispari >= 10) {
+    numeroUser = parseInt(prompt('inserisci dei numeri'))
 }
+
+console.log(numeroUser)
+
+
+// for (let i = 0; i < 100; i++){
+    
+//     let correct = numeroUser[i]
+//     console.log(correct)
+
+//     if ( numeroUser = (resto = 1)){
+//         DispariArray.push(numeroUser)
+//     }
+//     else {
+//         DispariArray.pop()
+//     }
+// console.log(DispariArray, resto, numeroUser)
+// }
+
