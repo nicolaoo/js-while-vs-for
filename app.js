@@ -6,19 +6,37 @@
 
 
 
-let numeroUser = parseInt(prompt('inserisci dei numeri'))
 
-let DispariArray = []
+let dispariArray = []
 
-let resto = numeroUser % 2
 
-let numDispari = (resto = 1)
 
-while (numDispari >= 10) {
+while (dispariArray.length < 10) {
     numeroUser = parseInt(prompt('inserisci dei numeri'))
+    
+    let resto = numeroUser % 2
+
+    if (resto === 0 || isNaN(numeroUser)) {
+        console.log('pari')
+    } else {
+        console.log('dispari')
+        dispariArray.push(numeroUser)
+    }
 }
 
-console.log(numeroUser)
+let stampaElement = document.getElementById('numeri-dispari')
+
+for (let i = 0; i < dispariArray.length; i++) {
+    let numeroCorrente = dispariArray[i]
+    console.log(numeroCorrente)
+
+    stampaElement.innerHTML = numeroCorrente
+}
+
+
+
+
+console.log(dispariArray)
 
 
 // for (let i = 0; i < 100; i++){
